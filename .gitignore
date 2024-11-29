@@ -1,0 +1,12 @@
+*/coverage/
+*/node_modules/
+*/.dart_tool/
+**.csproj
+**.csproj.user
+**/obj/
+**/bin/
+*/.gradle
+*/build
+*/vendor/
+*/coverage.out
+_docs_/
