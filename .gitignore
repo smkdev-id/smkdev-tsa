@@ -8,5 +8,8 @@
 */.gradle
 */build
 */vendor/
+*/.phpunit.result.cache
+*/.phpunit.cache/
+*/.idea
 */coverage.out
 _docs_/
