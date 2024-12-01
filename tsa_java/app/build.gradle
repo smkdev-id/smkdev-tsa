@@ -34,7 +34,7 @@ java {
 
 application {
     // Define the main class for the application.
-    mainClass = 'java.App'
+    mainClass = 'tsa_java.App'
 }
 
 tasks.named('test') {

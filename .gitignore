@@ -11,5 +11,8 @@
 */.phpunit.result.cache
 */.phpunit.cache/
 */.idea
+*/.vscode
 */coverage.out
+*/.gradle
+**/build
 _docs_/
