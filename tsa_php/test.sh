@@ -4,7 +4,7 @@ set -e
 
 if [ ! -d "vendor" ]; then
     echo "Vendor directory not found. Running composer install..."
-    composer install --quiet --no-interaction --optimize-autoloader --prefer-dist --no-dev
+    composer install --quiet --no-interaction
     echo "Composer install completed."
 fi
 
