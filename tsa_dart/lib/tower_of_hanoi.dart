@@ -1,3 +1,6 @@
-int calculate() {
-  return 6 * 7;
+void moveDisk(
+  // YOUR CODE HERE
 }
+
+void towerOfHanoi(int numberOfDisks) {
+  // YOUR CODE HERE
