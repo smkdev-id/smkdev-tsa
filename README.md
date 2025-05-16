@@ -46,7 +46,7 @@ sequenceDiagram
 Ikuti langkah-langkah berikut untuk menyelesaikan tes coding dengan benar:
 
 1. **Ambil Repository dari Fork:**
-   Lakukan *fork* pada repository tes di [Talent Assessment Developer](https://github.com/smkdev-id/talent-assesment-developer) dan lakukan *pull* ke lokal Anda.
+   Lakukan *fork* pada repository tes di [Talent Assessment Developer](https://github.com/smkdev-id/smkdev-tsa) dan lakukan *pull* ke lokal Anda.
 
 2. **Selesaikan Tugas pada Fungsi yang Telah Disediakan:**
    Tulis kode di dalam fungsi yang sudah ditentukan. Contoh format fungsi:
@@ -66,7 +66,7 @@ Ikuti langkah-langkah berikut untuk menyelesaikan tes coding dengan benar:
    Lakukan *push* kode ke repository yang telah di-*fork*, kemudian ajukan *pull request* ke repository utama.
 
 6. **Ajukan Pertanyaan jika Diperlukan:**
-   Jika terdapat pertanyaan atau kendala, silakan ajukan melalui fitur *issue* di [repository GitHub](https://github.com/smkdev-id/talent-assesment-developer).
+   Jika terdapat pertanyaan atau kendala, silakan ajukan melalui fitur *issue* di [repository GitHub](https://github.com/smkdev-id/smkdev-tsa).
 
 
 
