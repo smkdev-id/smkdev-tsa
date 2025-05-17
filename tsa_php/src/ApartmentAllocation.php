@@ -11,6 +11,49 @@ function solveApartment($A, $B, $N, $M, $K) {
      */
 
     // YOUR CODE HERE
+    <?php
+
+function allocateApartments() {
+    // Prompt user for inputs
+    echo "Enter number of applicants (n): ";
+    $n = (int)trim(fgets(STDIN));
+
+    echo "Enter number of apartments (m): ";
+    $m = (int)trim(fgets(STDIN));
+
+    echo "Enter maximum allowed difference (k): ";
+    $k = (int)trim(fgets(STDIN));
+
+    echo "Enter desired apartment sizes for $n applicants (space-separated):\n";
+    $a = array_map('intval', explode(' ', trim(fgets(STDIN))));
+
+    echo "Enter available apartment sizes for $m apartments (space-separated):\n";
+    $b = array_map('intval', explode(' ', trim(fgets(STDIN))));
+
+    // Sort both arrays
+    sort($a);
+    sort($b);
+
+    $i = 0;
+    $j = 0;
+    $count = 0;
+
+    while ($i < $n && $j < $m) {
+        if (abs($a[$i] - $b[$j]) <= $k) {
+            $count++;
+            $i++;
+            $j++;
+        } elseif ($b[$j] < $a[$i] - $k) {
+            $j++;
+        } else {
+            $i++;
+        }
+    }
+
+    echo "Number of applicants who got an apartment: $count\n";
+}
+
+allocateApartments();
 
     return $matches;
 }
