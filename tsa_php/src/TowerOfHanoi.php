@@ -13,6 +13,14 @@
 function moveDisk($diskNumber, &$moves, $sourceStack, $destinationStack, $auxiliaryStack)
 {
     // YOUR CODE HERE
+    if ($diskNumber == 1) {
+        $moves[] = [$sourceStack, $destinationStack];
+        return;
+    }
+
+    moveDisk($diskNumber - 1, $moves, $sourceStack, $auxiliaryStack, $destinationStack);
+    $moves[] = [$sourceStack, $destinationStack];
+    moveDisk($diskNumber - 1, $moves, $auxiliaryStack, $destinationStack, $sourceStack);
 }
 
 /**
@@ -23,6 +31,13 @@ function moveDisk($diskNumber, &$moves, $sourceStack, $destinationStack, $auxili
 function towerOfHanoi($numberOfDisks)
 {
     // YOUR CODE HERE
+    $moves = [];
+    moveDisk($numberOfDisks, $moves, 1, 3, 2);
+
+    echo count($moves) . "\n";
+    foreach ($moves as [$from, $to]) {
+        echo "$from $to\n";
+    }
 }
 
 ?>
